@@ -1,1 +1,495 @@
-hello galaxy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="http://www.electricteaching.com/math/js/jquery.js"></script>
+  <script src="http://www.electricteaching.com/math/js/bootstrap.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders
+    Stuff to ask David:
+    How to make the navbar always be there
+     */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      height:50px;
+      font-size:25px;
+    }
+
+    .mybutton{
+      background-color:#999999;
+      border-color:#999999;
+    }
+
+    .mybutton:hover{
+      background-color:#BC0800;
+      border-color:#BC0800;
+    }
+
+    /*.mybutton:onclick{
+      background-color:#BC0800;
+      border-color:#BC0800;
+    }*/
+
+    .navbar-brand {
+      font-size:30px;
+    }
+
+    .navbar-custom {
+      background-color:#BC0800;
+    }
+
+    p {
+      font-size:18px;
+    }
+
+    h1 {
+      padding-top:40px;
+    }
+
+    a:hover {
+      color:#EEEEEE;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      height: 100%;
+    }
+
+    img {
+      width:80%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar-custom navbar navbar-inverse navbar-fixed-top navbar-fixed">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="http://www.seattleacademy.org">Seattle Academy</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#math">Math</a></li>
+        <li><a href="#science">Science</a></li>
+        <li><a href="#language">Language</a></li>
+        <li><a href="#humanities">Humanities</a></li>
+        <li><a href="#arts">Arts</a></li>
+        <li><a href="#sports">PE</a></li>
+        <li><a href="#sports">Other Faculty</a></li>
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <img src:"https://saasphotogallery.smugmug.com/Other/My-Smug-Mug/i-Q7JQQHb/0/Th/S%20transparency-Th.jpg">
+      </ul> -->
+    </div>
+  </div>
+</nav>
+
+<div></div>
+<div class="row"></div>
+
+<div class="container-fluid text-center">    
+  <div class="row content"> <a name="math"></a>
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Math</h1>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <img src="http://saasmath.seattleacademy.org/facultypics/Felton-Willy.jpg">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h3>Whilliam Phelton</h3>
+      <p>Mathematics; Technology. B.S, Willamette University; M.A., Western Governors University. Willy has taught mathematics (including algebra, geometry, pre-calculus, and trigonometry) as well as computer science at the Community School in Sun Valley, Idaho, as well as Forest Ridge School of the Sacred Heart here in Seattle. While at the Community School he also served as the Assistant Director of Technology. In addition, Willy coaches basketball, has been an outdoor trip leader, and was a software developer for AT&T Wireless.</p>
+
+                    <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg mybutton" data-toggle="modal" data-target="#myModal">Links</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Links</h4>
+      </div>
+      <div class="modal-body">
+        <p>Put links here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <img src="http://saasmath.seattleacademy.org/facultypics/Johns-David.jpg">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h3>David Johns</h3>
+      <p>Mathematics, Coach. B.A., University of California at San Diego; M.E., Seattle University. David came to Seattle Academy after several years as a math instructor at Seattle Country Day School, while also serving as their athletic director. Before that, he was a middle school computer teacher and specialist in La Jolla, California. David says, simply, “I adore teaching and coaching! I thoroughly enjoy creating enthusiastic, dynamic, and challenging lessons that engage students.”</p>
+
+                    <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg mybutton" data-toggle="modal" data-target="#myModal">Links</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Links</h4>
+      </div>
+      <div class="modal-body">
+        <p>Put links here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center">    
+  <div class="row content"> <a name="science"></a>
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Science</h1>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <img src="http://saasmath.seattleacademy.org/facultypics/Kunasek-Shelley.jpg">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h3>Shelley Kunasek</h3>
+      <p>Science. B.A., Pomona College; M.I.T., Ph.D,  University of Washington. Shelley taught science at the middle and high school level, as well as at the University of Washington and Highline Community College. She also served as a research assistant with the Earth and Space Sciences & Atmospheric Sciences and the UW. Shelley is the conference founder of the UW Graduate Climate Conference, and was a member of the Seattle Riot 2005 National Champion Women’s Ultimate Frisbee Team. In addition to living in West Africa, France, and Greenland, Shelley’s outside interests include crafting, gardening, hiking, and cross country skiing.</p>
+
+                    <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg mybutton" data-toggle="modal" data-target="#myModal">Links</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Links</h4>
+      </div>
+      <div class="modal-body">
+        <p>Put links here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      </div>
+    </div>
+</div>
+
+
+<div class="container-fluid text-center">    
+  <div class="row content"> <a name="language"></a>
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Language</h1>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <img src="http://saasmath.seattleacademy.org/facultypics/Deeg-LeGal-Fran%C3%A7oise.jpg">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h3>Francoise Deeg LeGal</h3>
+      <p>Foreign Language Department Chair; French; Latin. Baccalaureat from the Academie de Rennes in France; undergraduate studies at the University de Haute Bretagne and at Friedrich-Whilhelm Universitaet; M.A., University of Rochester; doctoral studies at University of Rochester. Before coming to Seattle Academy in 1997, Francoise was Head of the foreign language department at Overlake School in Redmond, Washington for many years, taught French at Bellevue Community College, and worked as a translator for Microsoft.</p>
+
+                    <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg mybutton" data-toggle="modal" data-target="#myModal">Links</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Links</h4>
+      </div>
+      <div class="modal-body">
+        <p>Put links here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      </div>
+    </div>
+</div>
+
+<div class="container-fluid text-center">    
+  <div class="row content"> <a name="humanities"></a>
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Humanities</h1>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <img src="http://saasmath.seattleacademy.org/facultypics/Gough-Jason.jpg">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h3>Jason Gough</h3>
+      <p>College Advising; English. B.A., University of Puget Sound; M.A., University of Wisconsin-Milwaukee; M.A., Breadloaf School. Jason taught at the Western Reserve Academy in Hudson, Ohio, from 2007-2010. He has taught everything from Freshman Composition to AP Literature and Composition and served as a student advisor, club advisor, and coached track, cross country, and football. He also worked in admissions at the post-secondary level at the University of Puget Sound.</p>
+
+                    <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg mybutton" data-toggle="modal" data-target="#myModal">Links</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Links</h4>
+      </div>
+      <div class="modal-body">
+        <p>Put links here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <img src="http://saasmath.seattleacademy.org/facultypics/Retz-Steve.jpg">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h3>Steve Retz</h3>
+      <p>History Department Chair. B.A., St. Olaf College; M.A., Brown University. Prior to SAAS, Steve taught high school students and adults in Tangier, Morocco, and also worked as a site coordinator in an after-school tutoring program for at-risk children. Says Steve, “I want to help students learn that history is so much more than names and dates. The really important questions to ask about history go beyond ‘what happened,’ and focus on ‘how’ and ‘why.’ This makes history relevant for us in the present.” Steve leads a contingent of SAAS youth legislature students to Olympia each year to write bills that frequently make it onto the docket for debate on the senate and house floor.</p>
+
+                    <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg mybutton" data-toggle="modal" data-target="#myModal">Links</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Links</h4>
+      </div>
+      <div class="modal-body">
+        <p>Put links here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center">    
+  <div class="row content"> <a name="arts"></a>
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Arts</h1>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <img src="http://saasmath.seattleacademy.org/facultypics/Flood-Tom.jpg">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h3>Tom Flood</h3>
+      <p>Visual Arts; Sustainability. B.A., Western Washington University, Outstanding Fine Arts Graduate Award. Tom taught visual arts at Coyote Jr. High School and Madrona Elementary School prior to joining the Seattle Academy faculty. He has also produced numerous youth public art projects, such as the Isaiah Edward Memorial Park, Casey Family Trees, and Seattle Utility alley murals. In addition to teaching various visual arts media and sustainability classes, Tom is an accomplished mechanic, welder, fabricator, and printmaker.</p>
+
+                    <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg mybutton" data-toggle="modal" data-target="#myModal">Links</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Links</h4>
+      </div>
+      <div class="modal-body">
+        <p>Put links here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center">    
+  <div class="row content"> <a name="sports"></a>
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>PE</h1>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <img src="http://saasmath.seattleacademy.org/facultypics/Knight-Ashley.jpg">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h3>Ashley Knight</h3>
+      <p> Physical Education; Coach. B.A., Eastern Washington University. Ashley has taught physical education for the Seattle Public Schools and the YMCA. She has coached basketball for SAAS and soccer for the Special Olympics of Washington State. While attending EWU, she earned the Big Sky Student-Athlete Award for her outstanding academic achievement and athletic performance.</p>
+
+                    <!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg mybutton" data-toggle="modal" data-target="#myModal">Links</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Links</h4>
+      </div>
+      <div class="modal-body">
+        <p>Put links here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <p><br></p>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Seattle Academy of Arts and Sciences</p>
+</footer>
+
+</body>
+</html>
